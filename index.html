@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO - Balises méta essentielles -->
+  <title>Les Jardins de la Baie – Primeur Bio à Dol-de-Bretagne (35)</title>
+  <meta name="description" content="Les Jardins de la Baie, votre primeur bio local à Dol-de-Bretagne. Fruits et légumes frais du terroir breton, produits locaux et de saison. Livraison en Ille-et-Vilaine.">
+  <meta name="keywords" content="primeur bio Dol-de-Bretagne, fruits légumes frais Bretagne, maraîcher local 35, légumes de saison Ille-et-Vilaine, circuit court Bretagne">
+  <meta name="author" content="Les Jardins de la Baie">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.lesjardinsdelabaie.fr/">
+
+  <!-- Open Graph (réseaux sociaux) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Les Jardins de la Baie – Primeur Bio à Dol-de-Bretagne">
+  <meta property="og:description" content="Fruits et légumes frais du terroir breton. Circuit court, producteurs locaux, livraison en Ille-et-Vilaine.">
+  <meta property="og:url" content="https://www.lesjardinsdelabaie.fr/">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Les Jardins de la Baie">
+
+  <!-- Données structurées JSON-LD (Google) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Les Jardins de la Baie",
+    "description": "Primeur bio à Dol-de-Bretagne, vente de fruits et légumes frais du terroir breton.",
+    "url": "https://www.lesjardinsdelabaie.fr",
+    "telephone": "+33-2-99-48-12-37",
+    "email": "contact@lesjardinsdelabaie.fr",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "14 Place Chateaubriand",
+      "addressLocality": "Dol-de-Bretagne",
+      "postalCode": "35120",
+      "addressCountry": "FR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 48.5489,
+      "longitude": -1.7531
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "08:30",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday"],
+        "opens": "07:30",
+        "closes": "13:30"
+      }
+    ],
+    "priceRange": "€€",
+    "servesCuisine": "Fruits et légumes"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --vert: #2d5a27;
+      --vert-clair: #4a8c40;
+      --vert-pale: #e8f0e6;
+      --terre: #8b5e3c;
+      --orange: #d4793b;
+      --creme: #faf7f0;
+      --noir: #1a1a1a;
+      --gris: #666;
+      --blanc: #ffffff;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      background: var(--creme);
+      color: var(--noir);
+      line-height: 1.7;
+    }
+
+    /* ── HEADER ── */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--vert);
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+      box-shadow: 0 2px 12px rgba(0,0,0,.25);
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--blanc);
+      text-decoration: none;
+      letter-spacing: .03em;
+    }
+
+    .logo span { color: #a8d89e; }
+
+    nav { display: flex; gap: 2rem; }
+
+    nav a {
+      color: rgba(255,255,255,.85);
+      text-decoration: none;
+      font-size: .9rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      transition: color .2s;
+    }
+
+    nav a:hover { color: #a8d89e; }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 88vh;
+      background:
+        linear-gradient(135deg, rgba(45,90,39,.85) 0%, rgba(74,140,64,.6) 60%, rgba(212,121,59,.4) 100%),
+        url('https://images.unsplash.com/photo-1542838132-92c53300491e?w=1400&q=80') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 4rem clamp(2rem, 8vw, 10rem);
+    }
+
+    .hero-tag {
+      display: inline-block;
+      background: var(--orange);
+      color: var(--blanc);
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      padding: .35rem .9rem;
+      border-radius: 2px;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.5rem, 6vw, 5rem);
+      font-weight: 900;
+      color: var(--blanc);
+      line-height: 1.1;
+      max-width: 14ch;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero h1 em {
+      font-style: normal;
+      color: #a8d89e;
+    }
+
+    .hero p {
+      color: rgba(255,255,255,.88);
+      font-size: 1.1rem;
+      max-width: 46ch;
+      margin-bottom: 2.5rem;
+      font-weight: 300;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      background: var(--orange);
+      color: var(--blanc);
+      padding: .85rem 2.2rem;
+      border-radius: 3px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: .95rem;
+      letter-spacing: .05em;
+      transition: background .2s, transform .15s;
+    }
+
+    .btn-primary:hover { background: #bf6530; transform: translateY(-2px); }
+
+    /* ── BANDEAU INFOS ── */
+    .bandeau {
+      background: var(--terre);
+      color: var(--blanc);
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      text-align: center;
+    }
+
+    .bandeau-item {
+      padding: 1.5rem 1rem;
+      border-right: 1px solid rgba(255,255,255,.15);
+    }
+
+    .bandeau-item:last-child { border-right: none; }
+
+    .bandeau-item .icon { font-size: 1.6rem; margin-bottom: .4rem; }
+
+    .bandeau-item strong {
+      display: block;
+      font-size: .95rem;
+      font-weight: 700;
+    }
+
+    .bandeau-item span {
+      font-size: .82rem;
+      opacity: .8;
+    }
+
+    /* ── SECTION GÉNÉRIQUE ── */
+    section { padding: 5rem clamp(1.5rem, 6vw, 8rem); }
+
+    .section-label {
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--vert-clair);
+      margin-bottom: .8rem;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 900;
+      line-height: 1.15;
+      margin-bottom: 1.2rem;
+      color: var(--noir);
+    }
+
+    .section-subtitle {
+      font-size: 1.05rem;
+      color: var(--gris);
+      max-width: 55ch;
+      margin-bottom: 3rem;
+      font-weight: 300;
+    }
+
+    /* ── PRODUITS ── */
+    #produits { background: var(--creme); }
+
+    .produits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .produit-card {
+      background: var(--blanc);
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0,0,0,.06);
+      transition: transform .25s, box-shadow .25s;
+    }
+
+    .produit-card:hover { transform: translateY(-5px); box-shadow: 0 8px 28px rgba(0,0,0,.12); }
+
+    .produit-img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+      background: var(--vert-pale);
+      font-size: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .produit-body { padding: 1.2rem 1.3rem 1.5rem; }
+
+    .produit-badge {
+      display: inline-block;
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--vert-clair);
+      border: 1px solid var(--vert-clair);
+      padding: .15rem .5rem;
+      border-radius: 2px;
+      margin-bottom: .6rem;
+    }
+
+    .produit-body h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: .3rem;
+    }
+
+    .produit-body p {
+      font-size: .88rem;
+      color: var(--gris);
+      line-height: 1.5;
+    }
+
+    .produit-prix {
+      margin-top: .8rem;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--terre);
+    }
+
+    /* ── À PROPOS ── */
+    #apropos {
+      background: var(--vert-pale);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    #apropos img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      border-radius: 6px;
+      box-shadow: 12px 12px 0 var(--vert-clair);
+    }
+
+    .apropos-text .section-subtitle { margin-bottom: 1.5rem; }
+
+    .valeurs { list-style: none; margin-top: 1.5rem; }
+
+    .valeurs li {
+      padding: .6rem 0;
+      border-bottom: 1px solid rgba(45,90,39,.15);
+      font-size: .95rem;
+      display: flex;
+      align-items: center;
+      gap: .8rem;
+    }
+
+    .valeurs li::before {
+      content: '✓';
+      color: var(--vert-clair);
+      font-weight: 700;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    /* ── PRODUCTEURS ── */
+    #producteurs { background: var(--blanc); }
+
+    .producteurs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .producteur-card {
+      border: 1px solid rgba(45,90,39,.15);
+      border-radius: 6px;
+      padding: 2rem;
+      transition: border-color .2s;
+    }
+
+    .producteur-card:hover { border-color: var(--vert-clair); }
+
+    .producteur-emoji { font-size: 2.5rem; margin-bottom: 1rem; }
+
+    .producteur-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: .4rem;
+    }
+
+    .producteur-lieu {
+      font-size: .8rem;
+      color: var(--vert-clair);
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin-bottom: .7rem;
+    }
+
+    .producteur-card p { font-size: .9rem; color: var(--gris); }
+
+    /* ── CONTACT ── */
+    #contact {
+      background: var(--vert);
+      color: var(--blanc);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    #contact .section-label { color: #a8d89e; }
+    #contact .section-title { color: var(--blanc); }
+    #contact .section-subtitle { color: rgba(255,255,255,.75); }
+
+    .contact-infos { display: flex; flex-direction: column; gap: 1.5rem; }
+
+    .contact-ligne {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .contact-icon {
+      font-size: 1.4rem;
+      flex-shrink: 0;
+      margin-top: .1rem;
+    }
+
+    .contact-ligne strong {
+      display: block;
+      font-size: .8rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      opacity: .7;
+      margin-bottom: .2rem;
+    }
+
+    .contact-ligne span { font-size: .98rem; }
+
+    .horaires-grid {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: .3rem 1.5rem;
+      font-size: .95rem;
+    }
+
+    .horaires-grid .jour { font-weight: 700; opacity: .8; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #111;
+      color: rgba(255,255,255,.5);
+      text-align: center;
+      padding: 1.8rem;
+      font-size: .82rem;
+    }
+
+    footer strong { color: rgba(255,255,255,.8); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      nav { display: none; }
+
+      #apropos {
+        grid-template-columns: 1fr;
+        padding: 3rem 1.5rem;
+      }
+
+      #apropos img { height: 260px; box-shadow: none; }
+
+      #contact {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <a href="#" class="logo">Les Jardins <span>de la Baie</span></a>
+    <nav>
+      <a href="#produits">Produits</a>
+      <a href="#apropos">À propos</a>
+      <a href="#producteurs">Producteurs</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero" aria-label="Présentation de l'entreprise">
+      <span class="hero-tag">🌿 Primeur Bio – Dol-de-Bretagne</span>
+      <h1>La fraîcheur du <em>terroir breton</em>, livrée chez vous</h1>
+      <p>Fruits et légumes de saison, cultivés dans un rayon de 50 km autour de la Baie du Mont Saint-Michel. En circuit court, depuis 2011.</p>
+      <a href="#produits" class="btn-primary">Découvrir nos produits →</a>
+    </section>
+
+    <!-- BANDEAU -->
+    <div class="bandeau" role="complementary" aria-label="Informations clés">
+      <div class="bandeau-item">
+        <div class="icon">🚜</div>
+        <strong>Circuit court</strong>
+        <span>Producteurs à moins de 50 km</span>
+      </div>
+      <div class="bandeau-item">
+        <div class="icon">🌱</div>
+        <strong>Agriculture raisonnée</strong>
+        <span>Sans pesticides de synthèse</span>
+      </div>
+      <div class="bandeau-item">
+        <div class="icon">📦</div>
+        <strong>Livraison en Ille-et-Vilaine</strong>
+        <span>Mardi, jeudi et samedi</span>
+      </div>
+      <div class="bandeau-item">
+        <div class="icon">🏪</div>
+        <strong>Boutique à Dol</strong>
+        <span>14 Place Chateaubriand</span>
+      </div>
+    </div>
+
+    <!-- PRODUITS -->
+    <section id="produits" aria-labelledby="titre-produits">
+      <p class="section-label">Notre sélection du moment</p>
+      <h2 id="titre-produits" class="section-title">Produits de saison</h2>
+      <p class="section-subtitle">Renouvelée chaque semaine selon les arrivages, notre sélection valorise les producteurs locaux du Pays de Dol et de la Côte d'Émeraude.</p>
+
+      <div class="produits-grid">
+
+        <article class="produit-card">
+          <div class="produit-img" aria-hidden="true">🥕</div>
+          <div class="produit-body">
+            <span class="produit-badge">Légume</span>
+            <h3>Carottes des sables</h3>
+            <p>Cultivées dans les terres sablonneuses du littoral, douces et croquantes. Producteur : EARL Lebreton, Hirel.</p>
+            <div class="produit-prix">1,20 € / kg</div>
+          </div>
+        </article>
+
+        <article class="produit-card">
+          <div class="produit-img" aria-hidden="true">🍅</div>
+          <div class="produit-body">
+            <span class="produit-badge">Légume</span>
+            <h3>Tomates anciennes</h3>
+            <p>Cœur de bœuf, Noire de Crimée, Ananas… variétés patrimoniales cultivées sans intrant chimique.</p>
+            <div class="produit-prix">3,80 € / kg</div>
+          </div>
+        </article>
+
+        <article class="produit-card">
+          <div class="produit-img" aria-hidden="true">🫐</div>
+          <div class="produit-body">
+            <span class="produit-badge">Fruit</span>
+            <h3>Myrtilles de Bretagne</h3>
+            <p>Cueillette manuelle, disponibles en été. Idéales pour confitures et desserts maison.</p>
+            <div class="produit-prix">4,50 € / barquette 250g</div>
+          </div>
+        </article>
+
+        <article class="produit-card">
+          <div class="produit-img" aria-hidden="true">🥦</div>
+          <div class="produit-body">
+            <span class="produit-badge">Légume</span>
+            <h3>Brocolis du Clos</h3>
+            <p>Cultivés par la famille Guérin à Plerguer, récoltés à la main le matin de la livraison.</p>
+            <div class="produit-prix">1,60 € / pièce</div>
+          </div>
+        </article>
+
+        <article class="produit-card">
+          <div class="produit-img" aria-hidden="true">🍎</div>
+          <div class="produit-body">
+            <span class="produit-badge">Fruit</span>
+            <h3>Pommes Reinette du Mans</h3>
+            <p>Verger de 2 hectares à Saint-Broladre. Ramassage en octobre, stockage en fruitière naturelle.</p>
+            <div class="produit-prix">2,20 € / kg</div>
+          </div>
+        </article>
+
+        <article class="produit-card">
+          <div class="produit-img" aria-hidden="true">🧅</div>
+          <div class="produit-body">
+            <span class="produit-badge">Légume</span>
+            <h3>Échalotes de Bretagne</h3>
+            <p>IGP Echalote de Bretagne, tressées à la main. Un incontournable de la cuisine locale.</p>
+            <div class="produit-prix">3,00 € / tresse 500g</div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- À PROPOS -->
+    <section id="apropos" aria-labelledby="titre-apropos">
+      <img src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=700&q=80"
+           alt="Étal de fruits et légumes frais au marché de Dol-de-Bretagne"
+           loading="lazy">
+      <div class="apropos-text">
+        <p class="section-label">Notre histoire</p>
+        <h2 id="titre-apropos" class="section-title">Une famille au service du goût</h2>
+        <p class="section-subtitle">
+          Fondés en 2011 par Marie et Bertrand Morel, Les Jardins de la Baie sont nés d'une conviction simple : les meilleures saveurs se trouvent dans les champs d'à côté.
+        </p>
+        <p style="color: var(--gris); font-size: .95rem; margin-bottom: 1rem;">
+          Installés au cœur de Dol-de-Bretagne, entre la Baie du Mont Saint-Michel et la Côte d'Émeraude, nous sélectionnons chaque semaine les meilleurs lots auprès d'une vingtaine de producteurs partenaires du Pays de Dol.
+        </p>
+        <ul class="valeurs" aria-label="Nos engagements">
+          <li>Aucun produit traité aux pesticides de synthèse</li>
+          <li>100 % des partenaires agricoles en Ille-et-Vilaine</li>
+          <li>Emballages recyclables ou compostables</li>
+          <li>Prix justes pour les producteurs et les consommateurs</li>
+          <li>Partenaire des cantines scolaires du Pays de Dol</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PRODUCTEURS -->
+    <section id="producteurs" aria-labelledby="titre-producteurs">
+      <p class="section-label">Ils cultivent pour vous</p>
+      <h2 id="titre-producteurs" class="section-title">Nos producteurs partenaires</h2>
+      <p class="section-subtitle">Des visages, des exploitations, des terroirs. Voici quelques-uns des agriculteurs qui font vivre nos étals.</p>
+
+      <div class="producteurs-grid">
+
+        <article class="producteur-card">
+          <div class="producteur-emoji">🌾</div>
+          <h3>EARL Lebreton</h3>
+          <p class="producteur-lieu">📍 Hirel (35)</p>
+          <p>Maraîchage en sol sablonneux depuis 1987. Carottes, poireaux et navets cultivés en bord de baie avec des méthodes respectueuses de l'environnement côtier.</p>
+        </article>
+
+        <article class="producteur-card">
+          <div class="producteur-emoji">🍏</div>
+          <h3>Verger de la Croix-Blanche</h3>
+          <p class="producteur-lieu">📍 Saint-Broladre (35)</p>
+          <p>Arboriculteur depuis 3 générations, Jean-Yves Mahé cultive 12 variétés de pommes et poires anciennes sur un verger enherbé conduit en agroécologie.</p>
+        </article>
+
+        <article class="producteur-card">
+          <div class="producteur-emoji">🥬</div>
+          <h3>Les Serres de Plerguer</h3>
+          <p class="producteur-lieu">📍 Plerguer (35)</p>
+          <p>Hélène et Patrick Guérin produisent salades, herbes aromatiques et légumes primeurs en serres chauffées à l'énergie bois, toute l'année.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" aria-labelledby="titre-contact">
+      <div>
+        <p class="section-label">Venez nous rendre visite</p>
+        <h2 id="titre-contact" class="section-title">Nous trouver</h2>
+        <p class="section-subtitle">Notre boutique est ouverte du mardi au samedi. Commande en ligne disponible avec livraison à domicile.</p>
+
+        <div class="contact-infos">
+          <div class="contact-ligne">
+            <span class="contact-icon">📍</span>
+            <div>
+              <strong>Adresse</strong>
+              <span>14 Place Chateaubriand<br>35120 Dol-de-Bretagne</span>
+            </div>
+          </div>
+          <div class="contact-ligne">
+            <span class="contact-icon">📞</span>
+            <div>
+              <strong>Téléphone</strong>
+              <span><a href="tel:+33299481237" style="color:inherit;">02 99 48 12 37</a></span>
+            </div>
+          </div>
+          <div class="contact-ligne">
+            <span class="contact-icon">✉️</span>
+            <div>
+              <strong>Email</strong>
+              <span><a href="mailto:contact@lesjardinsdelabaie.fr" style="color:inherit;">contact@lesjardinsdelabaie.fr</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <p class="section-label" style="color:#a8d89e;">Horaires d'ouverture</p>
+        <h3 style="font-family:'Playfair Display',serif; font-size:1.6rem; color:var(--blanc); margin-bottom:1.5rem;">Boutique</h3>
+        <div class="horaires-grid" aria-label="Horaires d'ouverture">
+          <span class="jour">Mardi – Vendredi</span><span>08h30 – 19h00</span>
+          <span class="jour">Samedi</span><span>07h30 – 13h30 (marché)</span>
+          <span class="jour">Dimanche – Lundi</span><span>Fermé</span>
+        </div>
+
+        <p style="margin-top:2rem; font-size:.9rem; opacity:.7;">
+          🚚 Livraison à domicile en Ille-et-Vilaine : commandez avant le lundi midi pour une livraison le mercredi. Minimum de commande : 25 €.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2024 <strong>Les Jardins de la Baie</strong> – 14 Place Chateaubriand, 35120 Dol-de-Bretagne &nbsp;|&nbsp;
+    <a href="#" style="color:inherit;">Mentions légales</a> &nbsp;|&nbsp;
+    <a href="#" style="color:inherit;">Politique de confidentialité</a></p>
+    <p style="margin-top:.5rem; font-size:.75rem; opacity:.55;">
+      ⚠️ Site fictif créé à des fins pédagogiques – Tous les éléments (entreprise, personnes, prix) sont inventés.
+    </p>
+  </footer>
+
+</body>
+</html>
